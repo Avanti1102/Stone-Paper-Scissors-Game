@@ -1,0 +1,68 @@
+body{
+    background-color: #fdfcdc;
+    justify-content: center;
+    align-items: center;
+}
+#game-name{
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: white;
+    text-align: center;
+    border: 5px solid #f7f498;
+}
+.choices, .score-board, .msg-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.choice{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.choice:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.img{
+    clip-path: circle(50.2% at 50% 50%);
+    width: 200px;
+    height: 200px;
+}
+.score{
+    margin: 20px;
+    padding: 20px;
+}
+#user-score, #comp-score{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.score-board p{
+    font-size: xx-large;
+}
+#msg{
+    background-color: #0081a7;
+    color: #fdfcdc;
+    align-self: center;
+    font-size: x-large;
+    display: inline;
+    padding: 10px;
+    border:5px solid  #f7f498;
+    border-radius: 5px;
+}
+@media (max-width: 480px){
+    .choices, .score-board, .msg-container{
+        width: 100%;
+    }
+    .choice{
+        width: 100px;
+        height: 100px;
+        padding:8px;
+    }
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+}
